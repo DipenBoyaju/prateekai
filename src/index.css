@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 body {
-  /* background-color: #F8FAFC; */
+  background-color: #F8FAFC;
   font-family: "Poppins", serif;
 }
 
@@ -13,4 +13,5 @@ body {
   --color-lightwhite: #F8FAFC;
   --animate-slowbounce: bounce 2.5s infinite;
   --color-primary: #E44D30;
+  --color-bg: #F8F4EF;
 }

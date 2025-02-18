@@ -3,6 +3,8 @@ import RootLayout from "./layout/RootLayout"
 import Home from "./pages/Home"
 import ContactUs from "./pages/ContactUs"
 import AboutUs from "./pages/AboutUs"
+import Contributors from "./pages/Contributors"
+import Reasearch from "./pages/Reasearch"
 
 const App = () => {
   const router = createBrowserRouter(
@@ -13,6 +15,8 @@ const App = () => {
         children: [
           { index: true, element: <Home /> },
           { path: '/aboutus', element: <AboutUs /> },
+          { path: '/research', element: <Reasearch /> },
+          { path: '/contributors', element: <Contributors /> },
           { path: '/contactus', element: <ContactUs /> }
         ]
       }

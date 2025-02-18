@@ -28,7 +28,7 @@ const AboutUs = () => {
         <Title title="About Us" />
         <div className="py-10 relative">
           <div className="absolute w-26 h-60 bg-[#E9BD38] top-45 rounded-t-full rounded-b-full z-0 right-5"></div>
-          <div className="w-[90%] mx-auto bg-zinc-800 h-[80vh] rounded-3xl border-8 border-zinc-300 overflow-hidden relative">
+          <div className="w-[90%] mx-auto bg-zinc-800 h-[80vh] rounded-3xl border-8 border-zinc-300 overflow-hidden relative shadow-[-7px_7px_0_rgba(0,0,0,0.5)] z-10">
             <video
               ref={videoRef}
               src={about}
@@ -54,9 +54,11 @@ const AboutUs = () => {
                 </button></>
             )}
           </div>
-          <p className="text-base text-zinc-800 text-center pt-6">We are a dedicated team committed to breaking communication barriers through Nepali Sign Language Detection technology. Our mission is to empower the deaf and hard-of-hearing community by developing an innovative, accessible, and accurate system that translates Nepali Sign Language (NSL) into text or speech.<br /><br />
+          <div className="">
+            <p className="text-2xl text-zinc-800 text-left py-10">We are a dedicated team committed to breaking communication barriers through Nepali Sign Language Detection technology. Our mission is to empower the deaf and hard-of-hearing community by developing an innovative, accessible, and accurate system that translates Nepali Sign Language (NSL) into text or speech.<br /><br />
 
-            With a strong belief in inclusivity and accessibility, we leverage the power of AI and computer vision to bridge the gap between the hearing and non-hearing communities. Our work is driven by a passion for social impact, technological advancement, and fostering equal opportunities in education, employment, and everyday interactions.</p>
+              With a strong belief in inclusivity and accessibility, we leverage the power of AI and computer vision to bridge the gap between the hearing and non-hearing communities. Our work is driven by a passion for social impact, technological advancement, and fostering equal opportunities in education, employment, and everyday interactions.</p>
+          </div>
         </div>
         <Mission />
       </div>
