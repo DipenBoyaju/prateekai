@@ -20,7 +20,7 @@ const ContactForm = () => {
           <input
             type="text"
             {...register("firstname", { required: "Firstname is required" })}
-            className="border p-2 pl-4 border-zinc-300 rounded-xl focus:border-zinc-400 focus:outline-none mt-1 w-full"
+            className="border p-3 pl-4 border-zinc-300 rounded-lg focus:border-zinc-400 focus:outline-none mt-1 w-full"
             placeholder="Firstname"
           />
           {errors.firstname && <p className='text-red-500 text-xs '>{errors.firstname.message}</p>}
@@ -29,7 +29,7 @@ const ContactForm = () => {
           <input
             type="text"
             {...register("lastname", { required: "Lastname is required" })}
-            className="border p-2 pl-4 border-zinc-300 rounded-xl focus:border-zinc-400 focus:outline-none mt-1 w-full"
+            className="border p-3 pl-4 border-zinc-300 rounded-lg focus:border-zinc-400 focus:outline-none mt-1 w-full"
             placeholder="Lastname"
           />
           {errors.lastname && <p className='text-red-500 text-xs '>{errors.lastname.message}</p>}
@@ -42,7 +42,7 @@ const ContactForm = () => {
             required: "Email is required",
             pattern: { value: /^\S+@\S+$/i, message: "Invalid email format" }
           })}
-          className="border border-zinc-300 p-2 pl-4 rounded-xl mt-1 w-full focus:border-zinc-400 focus:outline-none"
+          className="border border-zinc-300 p-3 pl-4 rounded-lg mt-1 w-full focus:border-zinc-400 focus:outline-none"
           placeholder="Enter your email"
         />
         {errors.email && <p className='text-red-500 text-xs '>{errors.email.message}</p>}
@@ -56,7 +56,7 @@ const ContactForm = () => {
             minLength: { value: 10, message: "Phone number must be at least 10 digits" },
             maxLength: { value: 10, message: "Phone number can't exceed 10 digits" }
           })} name='phone'
-          className="border border-zinc-300 p-2 pl-4 rounded-xl mt-1 w-full focus:border-zinc-400 focus:outline-none"
+          className="border border-zinc-300 p-3 pl-4 rounded-lg mt-1 w-full focus:border-zinc-400 focus:outline-none"
           placeholder="Phone Number"
         />
         {errors.phone && <p className='text-red-500 text-xs '>{errors.phone.message}</p>}
@@ -65,7 +65,7 @@ const ContactForm = () => {
       <div className="">
         <textarea
           {...register('query', { required: "Query is required" })}
-          className="border border-zinc-300 p-2 pl-4 rounded-xl w-full mt-1 resize-none focus:border-zinc-400 focus:outline-none" name='query'
+          className="border border-zinc-300 p-3 pl-4 rounded-lg w-full mt-1 resize-none focus:border-zinc-400 focus:outline-none" name='query'
           placeholder="Type your query here" rows={5}
         ></textarea>
         {errors.query && <p className='text-xs text-red-500'>{errors.query.message}</p>}
