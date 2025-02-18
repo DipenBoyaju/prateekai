@@ -12,4 +12,5 @@ body {
   --color-coolgray: #64748B;
   --color-lightwhite: #F8FAFC;
   --animate-slowbounce: bounce 2.5s infinite;
+  --color-primary: #E44D30;
 }

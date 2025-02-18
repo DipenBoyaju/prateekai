@@ -71,7 +71,7 @@ const ContactForm = () => {
         {errors.query && <p className='text-xs text-red-500'>{errors.query.message}</p>}
       </div>
 
-      <button type="submit" className="bg-blue-600 w-full rounded-full text-lg text-white cursor-pointer py-3 focus:outline-none px-4  hover:bg-blue-700">
+      <button type="submit" className="bg-primary w-full rounded-full text-lg text-white cursor-pointer py-3 focus:outline-none px-4">
         Submit
       </button>
     </form>
