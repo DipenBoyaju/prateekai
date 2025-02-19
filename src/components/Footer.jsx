@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-zinc-900">
       <div className="container mx-auto px-10">
-        <div className="py-8 md:py-16 grid col-span-1 gap-5 mg:gap-0 md:grid-cols-12 border-b border-zinc-800">
+        <div className="py-8 md:py-16 grid col-span-1  mg:gap-0 md:grid-cols-12 border-b border-zinc-800 space-y-5 md:space-y-0">
           <div className="col-span-1 md:col-span-5">
             <p className="text-2xl font-semibold text-primary uppercase">prateek.ai</p>
             <p className="text-base md:text-lg md:pr-16 pt-8 text-zinc-400">We are a dedicated team committed to breaking communication barriers through Nepali Sign Language Detection technology. Our mission is ...</p>
