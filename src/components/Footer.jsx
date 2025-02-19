@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <div className="bg-zinc-900">
       <div className="container mx-auto px-10">
-        <div className="py-16 grid grid-cols-12 border-b border-zinc-800">
-          <div className="col-span-5">
+        <div className="py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 border-b border-zinc-800">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <p className="text-2xl font-semibold text-primary uppercase">prateek.ai</p>
             <p className="text-lg pr-16 pt-8 text-zinc-400">We are a dedicated team committed to breaking communication barriers through Nepali Sign Language Detection technology. Our mission is ...</p>
             <Link to={'/aboutus'} className="text-base pt-3 font-light flex gap-1 items-center text-primary/50">read more <MoveRight /></Link>
           </div>
-          <div className="col-span-3">
+          <div className="col-span-1 sm:col-span-2 md:col-span-1 lg:col-span-1">
             <h4 className="font-bold text-xl text-zinc-300">Discover</h4>
             <ul className="text-zinc-400 pt-5 space-y-2 grid grid-cols-2 w-full">
               <li><Link to={'/research'} className="hover:text-primary duration-500 transition-all ">Research</Link></li>
@@ -22,7 +22,7 @@ const Footer = () => {
               <li><Link to={'/contribute'} className="hover:text-primary duration-500 transition-all ">Contribute</Link></li>
             </ul>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 sm:col-span-2 md:col-span-1 lg:col-span-1">
             <h4 className="font-bold text-xl text-zinc-300">About</h4>
             <ul className="text-zinc-400 pt-5 space-y-2">
               <li><Link to={'/aboutus'} className="hover:text-primary duration-500 transition-all ">About Us</Link></li>
@@ -30,7 +30,7 @@ const Footer = () => {
               <li><Link to={'/aboutus'} className="hover:text-primary duration-500 transition-all ">Vision</Link></li>
             </ul>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 sm:col-span-2 md:col-span-1 lg:col-span-1">
             <h4 className="font-bold text-xl text-zinc-300">Social</h4>
             <ul className="text-zinc-400 pt-5 space-y-2">
               <li><Link to={'https://www.facebook.com/profile.php?id=100091857246327'} target='_blank' className="hover:text-primary duration-500 transition-all ">Facebook</Link></li>
@@ -39,10 +39,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="py-8 text-zinc-400 font-light flex justify-between">
+        <div className="py-8 text-zinc-400 font-light flex flex-col sm:flex-row justify-between">
           <p>Copyright © 2025.All Rights Reserved.</p>
           <div className="">
-            <h2 className=" uppercase text-2xl"></h2>
+            <h2 className="uppercase text-2xl"></h2>
           </div>
         </div>
       </div>

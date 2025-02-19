@@ -13,7 +13,7 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 py-20 container px-10 mx-auto">
           {/* Left section */}
           <div className="col-span-1 md:col-span-7 lg:mt-20">
-            <h1 className='text-3xl md:text-5xl font-semibold text-zinc-900'>Contact Us</h1>
+            <h1 className='text-3xl lg:text-5xl font-semibold text-zinc-900'>Contact Us</h1>
             <p className='text-zinc-500 mt-4 text-sm md:text-base'>Email, call or complete the form to contact us.</p>
 
             {/* Contact Info */}
