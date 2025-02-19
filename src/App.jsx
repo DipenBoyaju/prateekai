@@ -5,6 +5,7 @@ import ContactUs from "./pages/ContactUs"
 import AboutUs from "./pages/AboutUs"
 import Contributors from "./pages/Contributors"
 import Reasearch from "./pages/Reasearch"
+import Join from "./pages/Join"
 
 const App = () => {
   const router = createBrowserRouter(
@@ -17,6 +18,7 @@ const App = () => {
           { path: '/aboutus', element: <AboutUs /> },
           { path: '/research', element: <Reasearch /> },
           { path: '/contributors', element: <Contributors /> },
+          { path: '/joinus', element: <Join /> },
           { path: '/contactus', element: <ContactUs /> }
         ]
       }

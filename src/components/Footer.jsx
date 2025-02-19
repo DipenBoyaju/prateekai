@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <div className="bg-zinc-900">
       <div className="container mx-auto px-10">
-        <div className="py-16 grid grid-cols-12 border-b border-zinc-700">
+        <div className="py-16 grid grid-cols-12 border-b border-zinc-800">
           <div className="col-span-5">
             <p className="text-2xl font-semibold text-primary uppercase">prateek.ai</p>
-            <p className="text-lg pr-16 pt-5 text-zinc-400">We are a dedicated team committed to breaking communication barriers through Nepali Sign Language Detection technology. Our mission is ...</p>
+            <p className="text-lg pr-16 pt-8 text-zinc-400">We are a dedicated team committed to breaking communication barriers through Nepali Sign Language Detection technology. Our mission is ...</p>
             <Link to={'/aboutus'} className="text-base pt-3 font-light flex gap-1 items-center text-primary/50">read more <MoveRight /></Link>
           </div>
           <div className="col-span-3">
@@ -39,7 +39,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="py-8 text-zinc-200 font-light flex justify-between">
+        <div className="py-8 text-zinc-400 font-light flex justify-between">
           <p>Copyright © 2025.All Rights Reserved.</p>
           <div className="">
             <h2 className=" uppercase text-2xl"></h2>

@@ -12,6 +12,18 @@ body {
   --color-coolgray: #64748B;
   --color-lightwhite: #F8FAFC;
   --animate-slowbounce: bounce 2.5s infinite;
+  --animate-slowping: ping 1.5s infinite;
+  --animate-slowspin: slowspin 3.5s linear infinite;
   --color-primary: #E44D30;
   --color-bg: #F8F4EF;
+}
+
+@keyframes slowspin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

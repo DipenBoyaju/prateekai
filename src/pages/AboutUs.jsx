@@ -3,6 +3,8 @@ import Title from "../components/Title"
 import about from '../assets/videos/about.mp4'
 import { useRef, useState } from "react";
 import { FaPlay } from "react-icons/fa6";
+import Vision from "../components/Vision";
+import JoinUs from "../components/JoinUs";
 
 const AboutUs = () => {
   const videoRef = useRef(null);
@@ -46,7 +48,7 @@ const AboutUs = () => {
                   onClick={handlePlay}
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-22 flex items-center justify-center cursor-pointer bg-white/50 text-white text-4xl rounded-full"
                 >
-                  <div className="bg-white/60 rounded-full size-26 z-0 p-2 absolute animate-ping">
+                  <div className="bg-white/60 rounded-full size-26 z-0 p-2 absolute animate-slowping">
                   </div>
                   <div className="bg-white/60 rounded-full size-26 z-0 p-2 absolute">
                   </div>
@@ -60,6 +62,8 @@ const AboutUs = () => {
               With a strong belief in inclusivity and accessibility, we leverage the power of AI and computer vision to bridge the gap between the hearing and non-hearing communities. Our work is driven by a passion for social impact, technological advancement, and fostering equal opportunities in education, employment, and everyday interactions.</p>
           </div>
         </div>
+        <JoinUs />
+        <Vision />
         <Mission />
       </div>
     </div>

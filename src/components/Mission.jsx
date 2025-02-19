@@ -1,4 +1,4 @@
-import { Component } from "lucide-react"
+import { Asterisk, Component } from "lucide-react"
 import img1 from '../assets/images/6.jpg'
 import img2 from '../assets/images/2.jpg'
 
@@ -13,7 +13,7 @@ const Mission = () => {
       </div>
       <div className="col-span-6">
         <div className="relative">
-          <h3 className="font-semibold text-2xl uppercase text-primary pt-8">Our Mission</h3>
+          <h3 className="font-semibold text-2xl uppercase text-primary pt-8 flex"><Asterisk size={28} className="animate-slowspin" />Our Mission</h3>
           <p className="font-semibold text-8xl uppercase opacity-15 text-primary absolute top-0">Mission</p>
         </div>
         <h2 className="text-4xl font-semibold pt-8 text-zinc-900">Empowering Communication Through Technology</h2>
