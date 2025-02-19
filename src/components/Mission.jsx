@@ -4,7 +4,7 @@ import img2 from '../assets/images/2.jpg'
 
 const Mission = () => {
   return (
-    <div className="grid grid-cols-12 py-10 gap-10">
+    <div className="grid grid-cols-12 py-20 gap-10">
       <div className="col-span-6 relative mt-14">
         <img src={img1} alt="" className="w-[90%]" />
         <div className="absolute size-82 top-85 right-0 border-[12px] rounded-2xl overflow-hidden border-[#F8FAFC]">
