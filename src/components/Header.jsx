@@ -8,7 +8,7 @@ const Header = () => {
           <h1 className="text-2xl font-semibold uppercase">Prateek</h1>
         </div>
         <Navbar />
-        <button className="text-sm md:text-lg md:font-semibold font-mono border border-gold py-2 px-4 rounded-sm bg-primary text-white">Contribute</button>
+        <button className="text-xs md:text-lg md:font-semibold font-mono border border-gold py-2 px-4 rounded-sm bg-primary text-white">Contribute</button>
       </div>
     </div>
   )
