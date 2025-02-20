@@ -5,8 +5,8 @@ import m3 from '../assets/images/m3.jpg'
 
 const Vision = () => {
   return (
-    <div className="grid grid-cols-12 py-20 gap-10">
-      <div className="col-span-6">
+    <div className="grid grid-cols-1 md:grid-cols-12 py-20 gap-10">
+      <div className="md:col-span-6">
         <div className="relative">
           <h3 className="font-semibold text-2xl uppercase text-primary pt-8 flex items-center"><Asterisk size={28} className="animate-slowspin" />Our Vision</h3>
           <p className="font-semibold text-8xl uppercase opacity-15 text-primary absolute top-0">Vision</p>
@@ -22,7 +22,7 @@ const Vision = () => {
             Together, we are shaping a future where communication knows no limits.</p>
         </div>
       </div>
-      <div className="col-span-6 relative">
+      <div className="md:col-span-6 relative">
         <div className="absolute size-42 border-[12px] rounded-2xl border-[#F8FAFC] -mt-5 ml-10 overflow-hidden z-20">
           <img src={m2} alt="" className="h-full w-full object-cover object-center rounded-xl" />
         </div>

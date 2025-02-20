@@ -4,14 +4,14 @@ import img2 from '../assets/images/2.jpg'
 
 const Mission = () => {
   return (
-    <div className="grid grid-cols-12 py-20 gap-10">
-      <div className="col-span-6 relative mt-14">
+    <div className="grid grid-cols-1 md:grid-cols-12 py-20 gap-10">
+      <div className="md:col-span-6 relative mt-14 hidden md:block">
         <img src={img1} alt="" className="w-[90%]" />
         <div className="absolute size-82 top-85 right-0 border-[12px] rounded-2xl overflow-hidden border-[#F8FAFC]">
           <img src={img2} alt="" className="rounded-xl" />
         </div>
       </div>
-      <div className="col-span-6">
+      <div className="md:col-span-6">
         <div className="relative">
           <h3 className="font-semibold text-2xl uppercase text-primary pt-8 flex"><Asterisk size={28} className="animate-slowspin" />Our Mission</h3>
           <p className="font-semibold text-8xl uppercase opacity-15 text-primary absolute top-0">Mission</p>
