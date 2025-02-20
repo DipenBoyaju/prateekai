@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import star from '../assets/images/Shape.png'
 import vid1 from '../assets/videos/vid1.mp4'
 import vid2 from '../assets/videos/vid2.mp4'
@@ -7,7 +8,12 @@ const Hero = () => {
     <div className="container mx-auto py-28 px-10">
       <div className="grid grid-cols-12 gap-5">
         <div className="col-span-4">
-          <h1 className="font-bold text-7xl text-zinc-900">Better To Think For Learning</h1>
+          <h1 className="font-bold text-[2.9rem] leading-12 text-zinc-900 pt-14">Use AI-powered sign language detection to translate Nepali sign gestures in real-time.</h1>
+          <Link>
+            <button className="mt-6 bg-white text-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition">
+              Start Detection
+            </button>
+          </Link>
         </div>
         <div className="col-span-8 flex relative justify-end">
           <div className="w-92 bg-zinc-600 h-124 mt-18 rounded-bl-[14rem] overflow-hidden shadow-[-7px_7px_0_rgba(0,0,0,0.2)] z-10">
