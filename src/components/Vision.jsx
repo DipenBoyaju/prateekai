@@ -22,7 +22,7 @@ const Vision = () => {
             Together, we are shaping a future where communication knows no limits.</p>
         </div>
       </div>
-      <div className="md:col-span-6 relative">
+      <div className="md:col-span-6 relative hidden md:block">
         <div className="absolute size-42 border-[12px] rounded-2xl border-[#F8FAFC] -mt-5 ml-10 overflow-hidden z-20">
           <img src={m2} alt="" className="h-full w-full object-cover object-center rounded-xl" />
         </div>

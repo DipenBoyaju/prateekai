@@ -14,13 +14,13 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <>
-      <div className="md:hidden cursor-pointer transition-all duration-700" onClick={() => setShowMenu(prev => !prev)}>
+      <div className="md:hidden cursor-pointer transition-all duration-700 z-50" onClick={() => setShowMenu(prev => !prev)}>
         {
-          !showMenu ? <AlignJustify size={34} /> :
-            <X size={34} />
+          !showMenu ? <AlignJustify size={28} /> :
+            <X size={28} />
         }
       </div>
-      <nav className={`flex flex-col absolute md:relative top-20 md:top-0 bg-[#E0F2FE] text-4xl font-semibold md:bg-transparent left-0 text-center py-20 md:py-0 w-full md:w-auto h-full md:flex-row md:text-base gap-6 transition-all duration-700 z-30 md:translate-y-0 ${showMenu ? 'translate-y-[0]' : '-translate-y-[120%] opacity-0 md:opacity-100'}`}>
+      <nav className={`flex flex-col absolute md:relative top-16 md:top-0 bg-[#E0F2FE] text-4xl font-semibold md:bg-transparent left-0 text-center py-20 md:py-0 w-full md:w-auto h-full md:flex-row md:text-base gap-6 transition-all duration-700 md:translate-y-0 ${showMenu ? 'translate-y-[0] z-50' : '-translate-y-[120%] opacity-0 md:opacity-100'}`}>
         {menulist.map((item) => (
           <NavLink
             key={item.path}
