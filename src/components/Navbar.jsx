@@ -1,4 +1,4 @@
-import { AlignJustify } from "lucide-react"
+import { AlignJustify, X } from "lucide-react"
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 
@@ -14,7 +14,12 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <>
-      <div className="md:hidden cursor-pointer" onClick={() => setShowMenu(prev => !prev)}><AlignJustify size={34} /></div>
+      <div className="md:hidden cursor-pointer transition-all duration-700" onClick={() => setShowMenu(prev => !prev)}>
+        {
+          !showMenu ? <AlignJustify size={34} /> :
+            <X size={34} />
+        }
+      </div>
       <nav className={`flex flex-col absolute md:relative top-20 md:top-0 bg-[#E0F2FE] text-4xl font-semibold md:bg-transparent left-0 text-center py-20 md:py-0 w-full md:w-auto h-full md:flex-row md:text-base gap-6 transition-all duration-700 z-30 md:translate-y-0 ${showMenu ? 'translate-y-[0]' : '-translate-y-[120%] opacity-0 md:opacity-100'}`}>
         {menulist.map((item) => (
           <NavLink
