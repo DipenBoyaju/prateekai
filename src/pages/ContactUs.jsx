@@ -10,7 +10,7 @@ const ContactUs = () => {
     <div className="">
       <Title title="Contact Us" />
       <div className="" >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 py-20 container px-10 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 py-20 container px-4 md:px-10 mx-auto">
           {/* Left section */}
           <div className="col-span-1 md:col-span-7 lg:mt-20">
             <h1 className='text-3xl lg:text-5xl font-semibold text-zinc-900'>Contact Us</h1>

@@ -4,7 +4,7 @@ import Title from "../components/Title"
 const Join = () => {
   return (
     <div className="">
-      <div className="container mx-auto px-10">
+      <div className="container mx-auto px-4 md:px-10">
         <Title title="Join Us" />
         <div className="grid grid-cols-1 md:grid-cols-12 py-20 gap-10">
           <div className="md:col-span-6">

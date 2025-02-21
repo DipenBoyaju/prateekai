@@ -26,7 +26,7 @@ const contributors = [
 const Contributors = () => {
   return (
     <div>
-      <div className="container mx-auto px-10">
+      <div className="container mx-auto px-4 md:px-10">
         <Title title="Our Amazing Contributors" />
         <div className="py-20">
           <p className="text-lg text-center text-gray-600 max-w-3xl mx-auto mt-4">

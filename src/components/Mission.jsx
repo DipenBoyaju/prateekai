@@ -13,8 +13,8 @@ const Mission = () => {
       </div>
       <div className="md:col-span-6">
         <div className="relative">
-          <h3 className="font-semibold text-2xl uppercase text-primary pt-8 flex"><Asterisk size={28} className="animate-slowspin" />Our Mission</h3>
-          <p className="font-semibold text-8xl uppercase opacity-15 text-primary absolute top-0">Mission</p>
+          <h3 className="font-semibold text-2xl uppercase text-primary pt-5 md:pt-8 flex"><Asterisk size={28} className="animate-slowspin" />Our Mission</h3>
+          <p className="font-semibold text-7xl md:text-8xl uppercase opacity-15 text-primary absolute top-0">Mission</p>
         </div>
         <h2 className="text-4xl font-semibold pt-8 text-zinc-900">Empowering Communication Through Technology</h2>
         <p className="pt-6 text-zinc-500">We believe that bridging the communication gap can create a more inclusive world.<br /><br />

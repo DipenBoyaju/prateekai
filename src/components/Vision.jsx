@@ -8,8 +8,8 @@ const Vision = () => {
     <div className="grid grid-cols-1 md:grid-cols-12 py-20 gap-10">
       <div className="md:col-span-6">
         <div className="relative">
-          <h3 className="font-semibold text-2xl uppercase text-primary pt-8 flex items-center"><Asterisk size={28} className="animate-slowspin" />Our Vision</h3>
-          <p className="font-semibold text-8xl uppercase opacity-15 text-primary absolute top-0">Vision</p>
+          <h3 className="font-semibold text-2xl uppercase text-primary pt-4 md:pt-8 flex items-center"><Asterisk size={28} className="animate-slowspin" />Our Vision</h3>
+          <p className="font-semibold text-7xl md:text-8xl uppercase opacity-15 text-primary absolute top-0">Vision</p>
         </div>
         <h2 className="text-4xl font-semibold pt-8 text-zinc-900">Empowering Communication Through Technology</h2>
         <div className="">
