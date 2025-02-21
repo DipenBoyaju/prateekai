@@ -1,20 +1,9 @@
 import { useForm } from "react-hook-form"
-import toast from "react-hot-toast"
 
-const ContactForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm()
-
-  const onSubmit = (data) => {
-    console.log("data", data)
-    toast.success('message sent')
-  }
+const JoinForm = () => {
+  const { register, formState: { errors } } = useForm()
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="shadow-2xl p-8 space-y-4 bg-white rounded-3xl w-full">
-      <div className="">
-        <h3 className='text-3xl text-zinc-900 font-semibold'>Get in Touch</h3>
-        <p className='text-sm text-zinc-600'>You can reach us anytime</p>
-      </div>
-
+    <form className="shadow-2xl p-8 space-y-4 bg-white rounded-3xl w-full">
       <div className="flex flex-row justify-between gap-3 w-full">
         <div className="">
           <input
@@ -61,20 +50,10 @@ const ContactForm = () => {
         />
         {errors.phone && <p className='text-red-500 text-xs '>{errors.phone.message}</p>}
       </div>
-
-      <div className="">
-        <textarea
-          {...register('query', { required: "Query is required" })}
-          className="border border-zinc-300 p-3 pl-4 rounded-lg w-full mt-1 resize-none focus:border-zinc-400 focus:outline-none" name='query'
-          placeholder="Type your query here" rows={5}
-        ></textarea>
-        {errors.query && <p className='text-xs text-red-500'>{errors.query.message}</p>}
-      </div>
-
       <button type="submit" className="bg-primary w-full rounded-xl text-lg text-white cursor-pointer py-3 focus:outline-none px-4">
-        Submit
+        Join
       </button>
     </form>
   )
 }
-export default ContactForm
+export default JoinForm
