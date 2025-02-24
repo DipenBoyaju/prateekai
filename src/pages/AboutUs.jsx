@@ -1,6 +1,5 @@
 import Mission from "../components/Mission"
 import Title from "../components/Title"
-import about from '../assets/videos/about.mp4'
 import { useRef, useState } from "react";
 import { FaPlay } from "react-icons/fa6";
 import Vision from "../components/Vision";
@@ -33,7 +32,7 @@ const AboutUs = () => {
           <div className="w-full md:w-[90%] mx-auto bg-zinc-800 md:h-[80vh] rounded-3xl border-8 border-zinc-300 overflow-hidden relative shadow-[-7px_7px_0_rgba(0,0,0,0.5)] z-10">
             <video
               ref={videoRef}
-              src={about}
+              src="/videos/about.mp4"
               className="w-full h-full object-cover"
               playsInline
               controls={showControls}

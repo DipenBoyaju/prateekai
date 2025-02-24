@@ -1,23 +1,19 @@
 import { Asterisk, MoveRight } from 'lucide-react'
-import img1 from '../assets/images/m1.jpg'
-import img2 from '../assets/images/m2.jpg'
-import img3 from '../assets/images/m3.jpg'
-import bg from '../assets/images/aboutbg.png'
 import { Link } from 'react-router-dom'
 
 const AboutInfo = () => {
   return (
-    <div className="relative" style={{ backgroundImage: `url(${bg})` }}>
+    <div className="relative" style={{ backgroundImage: `url("/images/aboutbg.png")` }}>
       <div className="container mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-12 md:gap-10 pt-24 pb-28">
         <div className="col-span-1 md:col-span-5 relative w-full">
           <div className="absolute -top-20 size-60 border-8 rounded-xl border-white shadow-lg overflow-hidden -left-18 hidden md:block z-30">
-            <img src={img2} alt="" className=' rounded-lg object-cover object-center h-full' />
+            <img src="/images/m2.jpg" alt="" className=' rounded-lg object-cover object-center h-full' />
           </div>
           <div className="border-8 rounded-xl border-white shadow-lg w-full overflow-hidden md:h-[70vh] z-20 relative">
-            <img src={img1} alt="" className=' rounded-lg object-cover object-center h-full' />
+            <img src="/images/m1.jpg" alt="" className=' rounded-lg object-cover object-center h-full' />
           </div>
           <div className="absolute hidden md:block -bottom-20 size-54 border-8 rounded-xl border-white shadow-lg overflow-hidden right-0 z-30">
-            <img src={img3} alt="" className=' rounded-lg object-cover object-center h-full' />
+            <img src="/images/m3.jpg" alt="" className=' rounded-lg object-cover object-center h-full' />
           </div>
           <div className="border-l-2 border-gold absolute -bottom-18 left-25 border-b-2 w-40 h-20 rounded-bl-3xl"></div>
         </div>

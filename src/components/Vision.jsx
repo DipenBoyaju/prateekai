@@ -1,7 +1,4 @@
 import { Asterisk } from "lucide-react"
-import m1 from '../assets/images/m1.jpg'
-import m2 from '../assets/images/m2.jpg'
-import m3 from '../assets/images/m3.jpg'
 
 const Vision = () => {
   return (
@@ -24,13 +21,13 @@ const Vision = () => {
       </div>
       <div className="md:col-span-6 relative hidden md:block">
         <div className="absolute size-42 border-[12px] rounded-2xl border-[#F8FAFC] -mt-5 ml-10 overflow-hidden z-20">
-          <img src={m2} alt="" className="h-full w-full object-cover object-center rounded-xl" />
+          <img src="/images/m2.jpg" alt="" className="h-full w-full object-cover object-center rounded-xl" />
         </div>
         <div className="w-[80%] ml-auto h-[80vh] rounded-2xl overflow-hidden relative">
-          <img src={m1} alt="" className="object-cover object-center h-full" />
+          <img src="/images/m1.jpg" alt="" className="object-cover object-center h-full" />
         </div>
         <div className="absolute h-56 -mb-8 bottom-0 border-[12px] rounded-2xl border-[#F8FAFC]  overflow-hidden">
-          <img src={m3} alt="" className="h-full w-full object-cover object-center rounded-xl" />
+          <img src="/images/m3.jpg" alt="" className="h-full w-full object-cover object-center rounded-xl" />
         </div>
       </div>
     </div>
