@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
         <div className="md:col-span-4">
           <h1 className="font-bold text-[2.9rem] leading-14 text-zinc-900 md:pt-14">Use AI-powered sign language detection to translate <span className='text-transparent stroke-black stroke-1 outline-text'>Nepali sign gestures</span> in real-time.</h1>
-          <Link>
+          <Link to={'/signdetection'}>
             <button className="mt-8 bg-primary text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-primary/60 cursor-pointer transition flex items-center gap-2">
               Start Detection <MoveRight />
             </button>

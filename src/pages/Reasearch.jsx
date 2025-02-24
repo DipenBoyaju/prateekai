@@ -9,7 +9,7 @@ const Reasearch = () => {
       <div className="container mx-auto px-4 md:px-10">
         <Title title="Research" />
         <div className="py-20">
-          <h2 className="font-bold text-2xl md:text-5xl md:leading-14 inline-block bg-[#E0F2FE] px-8 py-8 rounded-lg relative">Inclusive Sign Langauge Two Way Communication Platform for Nepali Sign Language <Asterisk size={90} className="animate-slowspin text-primary  absolute -top-10 -left-10" /></h2>
+          <h2 className="font-bold text-2xl md:text-5xl md:leading-14 inline-block bg-amber-200 px-8 py-8 rounded-lg relative">Inclusive Sign Langauge Two Way Communication Platform for Nepali Sign Language <Asterisk size={90} className="animate-slowspin text-primary  absolute -top-10 -left-10" /></h2>
           <div className="pt-8">
             <h3 className="text-2xl md:text-3xl font-semibold flex items-center gap-3"><FaDiamond className="text-lg text-primary" />Problem</h3>
             <p className="pt-4 text-zinc-700">More than 100K people in Nepal have hearing and speaking disability (NDFN, 2022), while there are nearly 400M+ people globally with the same challenge (WFD, 2018). Their primary source of communication is sign language gestures. There lies a huge communication gap as most of us do not understand sign language, and it isn't feasible to have a translator everywhere. Because of this, people with such disability are held back from many opportunities. Also, any AI research and models developed to this day focus on some basic gestures, lack diversity in datasets, and very little to no work has been done for Nepali Sign Language. </p>

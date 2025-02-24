@@ -1,8 +1,9 @@
 import { Asterisk } from "lucide-react"
 
+// bg-[#E0F2FE]
 const JoinUs = () => {
   return (
-    <div className="bg-[#E0F2FE] w-full h-[60vh] rounded-lg flex justify-center items-center flex-col text-center">
+    <div className="bg-amber-200 w-full h-[60vh] rounded-lg flex justify-center items-center flex-col text-center">
       <Asterisk size={50} className="animate-slowspin text-primary" />
       <h2 className="text-3xl font-semibold text-zinc-900 mb-3">Be a Part of the Change</h2>
       <p className="text-lg text-zinc-700 max-w-2xl pt-2">
