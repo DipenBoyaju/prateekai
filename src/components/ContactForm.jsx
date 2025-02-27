@@ -9,7 +9,7 @@ const ContactForm = () => {
     toast.success('message sent')
   }
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="shadow-2xl p-8 space-y-4 bg-white rounded-3xl w-full">
+    <form onSubmit={handleSubmit(onSubmit)} className="shadow-2xl p-8 space-y-4 bg-zinc-100 border border-zinc-300 rounded-3xl w-full">
       <div className="">
         <h3 className='text-3xl text-zinc-900 font-semibold'>Get in Touch</h3>
         <p className='text-sm text-zinc-600'>You can reach us anytime</p>
@@ -71,7 +71,7 @@ const ContactForm = () => {
         {errors.query && <p className='text-xs text-red-500'>{errors.query.message}</p>}
       </div>
 
-      <button type="submit" className="bg-primary w-full rounded-xl text-lg text-white cursor-pointer py-3 focus:outline-none px-4">
+      <button type="submit" className="bg-blue w-full rounded-xl text-lg text-white cursor-pointer py-3 focus:outline-none px-4">
         Submit
       </button>
     </form>

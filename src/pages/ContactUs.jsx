@@ -18,11 +18,11 @@ const ContactUs = () => {
 
             {/* Contact Info */}
             <div className="flex flex-col md:flex-row mt-8 gap-5">
-              <div className="flex justify-center flex-col gap-2 shadow-lg py-8 text-center items-center border border-zinc-100 rounded-lg w-full sm:w-62">
+              <div className="flex justify-center flex-col gap-2 shadow-lg py-8 text-center items-center border border-blue/15 rounded-lg w-full sm:w-62">
                 <Mail className='text-xl md:text-2xl text-zinc-600' />
                 <p className='text-zinc-600'>prateekai@gmail.com</p>
               </div>
-              <div className="flex justify-center flex-col gap-2 shadow-lg py-8 text-center items-center border border-zinc-100 w-full sm:w-62 rounded-lg">
+              <div className="flex justify-center flex-col gap-2 shadow-lg py-8 text-center items-center border  w-full border-blue/15 sm:w-62 rounded-lg">
                 <Phone className='text-xl md:text-2xl text-zinc-600' />
                 <p className='text-zinc-600'>+977-9786548975</p>
               </div>

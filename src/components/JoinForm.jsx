@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form"
 const JoinForm = () => {
   const { register, formState: { errors } } = useForm()
   return (
-    <form className="shadow-2xl p-8 space-y-4 bg-white rounded-3xl w-full">
+    <form className="shadow-2xl p-8 space-y-4 bg-white rounded-3xl w-full border border-zinc-300">
       <div className="flex flex-row justify-between gap-3 w-full">
         <div className="">
           <input
@@ -50,7 +50,7 @@ const JoinForm = () => {
         />
         {errors.phone && <p className='text-red-500 text-xs '>{errors.phone.message}</p>}
       </div>
-      <button type="submit" className="bg-primary w-full rounded-xl text-lg text-white cursor-pointer py-3 focus:outline-none px-4">
+      <button type="submit" className="bg-blue w-full rounded-xl text-lg text-white cursor-pointer py-3 focus:outline-none px-4">
         Join
       </button>
     </form>
