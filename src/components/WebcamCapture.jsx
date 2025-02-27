@@ -15,7 +15,7 @@ const WebcamCapture = () => {
       <div className="col-span-8">
         {isCameraOn ? (
           <div className="relative">
-            <div className="h-[80vh] bg-amber-200 rounded-lg border-2 border-amber-300">
+            <div className="h-[80vh] bg-blue/30 rounded-lg border-2 border-blue/40">
               <Webcam
                 ref={webcamRef}
                 screenshotFormat="image/jpeg"
@@ -30,16 +30,16 @@ const WebcamCapture = () => {
             </button>
           </div>
         ) : (
-          <div className="w-full h-[80vh] flex items-center justify-center bg-amber-200 rounded-lg border-2 border-amber-300">
-            <div className="flex justify-center flex-col items-center bg-amber-300 p-10 rounded-xl gap-4 border-2 border-amber-400">
-              <Camera size={52} className="text-amber-800 bg-amber-400 p-3 rounded-full" />
+          <div className="w-full h-[80vh] flex items-center justify-center bg-blue/30 rounded-lg border-2 border-blue/40">
+            <div className="flex justify-center flex-col items-center bg-zinc-100  p-10 rounded-xl gap-4 border-2 border-blue/25">
+              <Camera size={52} className="text-amber-800 bg-ambe p-3 rounded-full" />
               <button onClick={toggleCamera} className="bg-amber-500 hover:bg-amber-600 cursor-pointer text-white py-2 px-4 rounded-lg font-[500]">Enable Camera</button>
             </div>
           </div>
         )}
       </div>
       <div className="col-span-4">
-        <div className="h-[80vh] bg-amber-200 rounded-md p-4 border-amber-300 border">
+        <div className="h-[80vh] bg-blue/5 rounded-md p-4 border-blue/10 border">
           <p>test</p>
         </div>
       </div>
