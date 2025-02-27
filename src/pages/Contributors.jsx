@@ -35,14 +35,13 @@ const Contributors = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
             {contributors.map((contributor, index) => (
-              <div key={index} className="bg-white shadow-lg rounded-lg p-5 text-center">
+              <div key={index} className="bg-white shadow-lg rounded-lg p-5 text-center border border-zinc-200">
                 <img
                   src={contributor.image}
                   alt={contributor.name}
                   className="w-24 h-24 mx-auto rounded-full object-cover"
                 />
                 <h3 className="text-lg font-semibold mt-4">{contributor.name}</h3>
-                {/* <p className="text-gray-600">{contributor.role}</p> */}
               </div>
             ))}
           </div>

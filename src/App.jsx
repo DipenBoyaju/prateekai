@@ -7,6 +7,7 @@ import Contributors from "./pages/Contributors"
 import Reasearch from "./pages/Reasearch"
 import Join from "./pages/Join"
 import Detection from "./pages/Detection"
+import ComingSoon from "./components/ComingSoon"
 
 const App = () => {
   const router = createBrowserRouter(
@@ -21,7 +22,8 @@ const App = () => {
           { path: '/contributors', element: <Contributors /> },
           { path: '/joinus', element: <Join /> },
           { path: '/contactus', element: <ContactUs /> },
-          { path: '/signdetection', element: <Detection /> }
+          { path: '/signdetection', element: <Detection /> },
+          { path: '/contribute', element: <ComingSoon /> }
         ]
       }
     ]

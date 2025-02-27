@@ -8,8 +8,7 @@ const Hero = () => {
         <div className="md:col-span-4">
           <h1 className="font-bold text-[2.9rem] leading-14 text-darkBlue md:pt-14">Use AI-powered sign language detection to translate <span className='text-transparent stroke-blue stroke-1 outline-text'>Nepali sign gestures</span> in real-time.</h1>
           <Link to={'/signdetection'}>
-            <button className="mt-8 bg-blue text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue/60 cursor-pointer transition flex items-center gap-2">
-              Start Detection <MoveRight />
+            <button className="mt-8 bg-blue text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue/60 cursor-pointer transition flex items-center gap-2">Get Started<MoveRight />
             </button>
           </Link>
         </div>

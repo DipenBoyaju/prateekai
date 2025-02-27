@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Navbar from "./Navbar"
 
 const Header = () => {
@@ -9,7 +10,9 @@ const Header = () => {
           <img src="/images/logotext.png" alt="" className="w-50" />
         </div>
         <Navbar />
-        <button className="text-xs md:text-lg md:font-semibold font-mono py-2 px-4 rounded-sm bg-blue hidden text-white md:block">Contribute</button>
+        <Link to='/contribute'>
+          <button className="text-xs md:text-lg md:font-semibold font-mono py-2 px-4 rounded-sm bg-blue hidden cursor-pointer text-white md:block">Contribute</button>
+        </Link>
       </div>
     </div>
   )

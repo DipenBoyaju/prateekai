@@ -2,11 +2,12 @@ import { useForm } from "react-hook-form"
 import toast from "react-hot-toast"
 
 const ContactForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm()
+  const { register, reset, handleSubmit, formState: { errors } } = useForm()
 
   const onSubmit = (data) => {
     console.log("data", data)
     toast.success('message sent')
+    reset()
   }
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="shadow-2xl p-8 space-y-4 bg-zinc-100 border border-zinc-300 rounded-3xl w-full">
