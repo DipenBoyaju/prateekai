@@ -1,54 +1,59 @@
 import { Camera, CameraOff } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import toast from "react-hot-toast";
 
-const WebcamCapture = () => {
+const WebcamCaptureForVideo = () => {
   const localVideoRef = useRef(null);
   const [isCameraOn, setIsCameraOn] = useState(false);
-  const [signText, setSignText] = useState(null);
+  const [signText, setSignText] = useState(null); // This will hold the detected sign language text
 
   useEffect(() => {
-    let localVideo = localVideoRef.current;
+    let localVideo = localVideoRef.current; // Copy the ref to a variable inside the effect
+    let videoStream;
     if (!isCameraOn) return;
 
+    // Get user media (camera access)
     navigator.mediaDevices
-      .getUserMedia({ video: true, audio: false })
+      .getUserMedia({ video: true, audio: true })
       .then((stream) => {
+        videoStream = stream;
         if (localVideo) {
           localVideo.srcObject = stream;
         }
 
-        // Start sending frames to the backend for sign language detection
-        const interval = setInterval(() => {
-          captureFrameAndSend(stream); // Capture and send every few seconds
-        }, 2000);
+        // Start sending video frames every 100ms (10 FPS)
+        const videoInterval = setInterval(() => {
+          captureVideoFrameAndSend(stream); // Capture and send video frame every 100ms
+        }, 100); // Send a frame every 100ms (10 FPS)
 
-        return () => clearInterval(interval); // Clean up interval on unmount
+        // Cleanup on unmount
+        return () => {
+          clearInterval(videoInterval);
+          if (localVideo && localVideo.srcObject) {
+            const tracks = localVideo.srcObject.getTracks();
+            tracks.forEach((track) => track.stop());
+          }
+        };
       })
-      .catch((error) => {
-        console.error("Error accessing media devices:", error)
-        toast.error('Unable to access the camera. Please check permissions.')
-
-      });
+      .catch((error) => console.error("Error accessing media devices:", error));
 
     // Cleanup on unmount
     return () => {
-      if (localVideo && localVideo.srcObject) {
-        const tracks = localVideo.srcObject.getTracks();
+      if (videoStream) {
+        const tracks = videoStream.getTracks();
         tracks.forEach((track) => track.stop());
       }
     };
   }, [isCameraOn]);
 
-  const captureFrameAndSend = () => {
+  const captureVideoFrameAndSend = () => {
     const canvas = document.createElement('canvas');
     const video = localVideoRef.current;
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
     canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
-    const imageData = canvas.toDataURL('image/jpeg'); // Convert the canvas image to base64
+    const imageData = canvas.toDataURL('image/jpeg');
 
-    // Send the frame to the backend API for sign language detection
+
     fetch('http://localhost:8000/api/detect-sign-language', {
       method: 'POST',
       headers: {
@@ -120,4 +125,4 @@ const WebcamCapture = () => {
   );
 };
 
-export default WebcamCapture;
+export default WebcamCaptureForVideo;
