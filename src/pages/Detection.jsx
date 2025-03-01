@@ -1,5 +1,5 @@
 import WebcamCapture from "../components/WebcamCapture"
-import WebcamCaptureForVideo from "../components/WebcamCaptureForVideo"
+// import WebcamCaptureForVideo from "../components/WebcamCaptureForVideo"
 
 const Detection = () => {
 
@@ -16,8 +16,8 @@ const Detection = () => {
             <li>Ensure good lighting and a clear background for better accuracy.</li>
           </ul>
         </div>
-        {/* <WebcamCapture /> */}
-        <WebcamCaptureForVideo />
+        <WebcamCapture />
+        {/* <WebcamCaptureForVideo /> */}
       </div>
     </div>
   )
