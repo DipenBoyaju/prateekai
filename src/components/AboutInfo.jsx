@@ -1,20 +1,30 @@
 import { Asterisk, MoveRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react';
 
 const AboutInfo = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { triggerOnce: true, threshold: 0.2 });
   return (
-    <div className="relative" style={{ backgroundImage: `url("/images/aboutbg.png")` }}>
+    <div className="relative" ref={ref} style={{ backgroundImage: `url("/images/aboutbg.png")` }}>
       <div className="container mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-12 md:gap-10 pt-28 pb-32">
         <div className="col-span-1 md:col-span-5 relative w-full">
-          <div className="absolute -top-20 size-60 border-8 rounded-xl border-white shadow-lg overflow-hidden -left-18 hidden md:block z-30">
+          <motion.div className="absolute -top-20 size-60 border-8 rounded-xl border-white shadow-lg overflow-hidden -left-18 hidden md:block z-30" initial={{ scale: 0 }}
+            animate={isInView ? { scale: 1 } : {}}
+            transition={{ duration: 1.2, ease: ["easeIn", "easeOut"] }}>
             <img src="/images/m2.jpg" alt="" className=' rounded-lg object-cover object-center h-full' />
-          </div>
-          <div className="border-8 rounded-xl border-white shadow-lg w-full overflow-hidden md:h-[70vh] z-20 relative">
+          </motion.div>
+          <motion.div className="border-8 rounded-xl border-white shadow-lg w-full overflow-hidden md:h-[70vh] z-20 relative" initial={{ x: -600 }}
+            animate={isInView ? { x: 0 } : {}}
+            transition={{ duration: 1.2, ease: ["easeIn", "easeOut"] }}>
             <img src="/images/m1.jpg" alt="" className=' rounded-lg object-cover object-center h-full' />
-          </div>
-          <div className="absolute hidden md:block -bottom-20 size-54 border-8 rounded-xl border-white shadow-lg overflow-hidden right-0 z-30">
+          </motion.div>
+          <motion.div className="absolute hidden md:block -bottom-20 size-54 border-8 rounded-xl border-white shadow-lg overflow-hidden right-0 z-30" initial={{ scale: 0 }}
+            animate={isInView ? { scale: 1 } : {}}
+            transition={{ duration: 1.2, ease: ["easeIn", "easeOut"] }}>
             <img src="/images/m3.jpg" alt="" className=' rounded-lg object-cover object-center h-full' />
-          </div>
+          </motion.div>
           <div className="border-l-2 border-gold absolute -bottom-18 left-25 border-b-2 w-40 h-20 rounded-bl-3xl"></div>
         </div>
         <div className="col-span-7">
