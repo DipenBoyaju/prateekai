@@ -12,37 +12,37 @@ const Header = () => {
           {/* <img src="/images/logotext.png" alt="" className="w-30 md:w-50 cursor-pointer" onClick={() => nav('/')} /> */}
           <div className="flex gap-2 items-center">
             <img src="/images/prateek.png" className="size-9" alt="" />
-            <h2 className="font-montserrat font-semibold text-2xl text-blue"> Prateek</h2>
+            <h2 className="font-montserrat font-semibold text-2xl text-zinc-800"> Prateek</h2>
             <p className="text-xs text-zinc-500">(Montserrat)</p>
           </div>
           <div className="flex gap-2 items-center">
             <img src="/images/prateek.png" className="size-9" alt="" />
-            <h2 className="font-nunito font-bold text-2xl text-blue"> Prateek</h2>
+            <h2 className="font-nunito font-bold text-2xl text-zinc-800"> Prateek</h2>
             <p className="text-xs text-zinc-500">(nunito)</p>
           </div>
           <div className="flex gap-2 items-center">
             <img src="/images/prateek.png" className="size-9" alt="" />
-            <h2 className="font-quicksand font-bold text-2xl text-blue"> Prateek</h2>
+            <h2 className="font-quicksand font-bold text-2xl text-zinc-800"> Prateek</h2>
             <p className="text-xs text-zinc-500">(quicksand)</p>
           </div>
           <div className="flex gap-2 items-center">
             <img src="/images/prateek.png" className="size-9" alt="" />
-            <h2 className="font-lexend font-semibold text-2xl text-blue"> Prateek</h2>
+            <h2 className="font-lexend font-semibold text-2xl text-zinc-800"> Prateek</h2>
             <p className="text-xs text-zinc-500">(Lexend Deca)</p>
           </div>
           <div className="flex gap-2 items-center">
             <img src="/images/prateek.png" className="size-9" alt="" />
-            <h2 className="font-rubik text-2xl text-blue"> Prateek</h2>
+            <h2 className="font-rubik text-2xl text-zinc-800"> Prateek</h2>
             <p className="text-xs text-zinc-500">(Rubik Mono)</p>
           </div>
           <div className="flex gap-2 items-center">
             <img src="/images/prateek.png" className="size-9" alt="" />
-            <h2 className="font-fire font-bold text-2xl text-blue"> Prateek</h2>
+            <h2 className="font-fire font-bold text-2xl text-zinc-800"> Prateek</h2>
             <p className="text-xs text-zinc-500">(Fira Sans)</p>
           </div>
           <div className="flex gap-2 items-center">
             <img src="/images/prateek.png" className="size-9" alt="" />
-            <h2 className="font-inter font-bold text-2xl text-blue"> Prateek</h2>
+            <h2 className="font-inter font-bold text-2xl text-zinc-800"> Prateek</h2>
             <p className="text-xs text-zinc-500">(Inter Tight)</p>
           </div>
         </div>
