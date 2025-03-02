@@ -22,16 +22,16 @@ const ImageSlider = () => {
       >
         {[...Array(2)].map((_, index) => (
           <div key={index} className="flex">
-            <img src="./images/2.jpg" alt="" className="w-70 h-50 object-cover" />
-            <img src="./images/6.jpg" alt="" className="w-70 h-50 object-cover" />
-            <img src="./images/m1.jpg" alt="" className="w-70 h-50 object-cover" />
-            <img src="./images/m2.jpg" alt="" className="w-70 h-50 object-cover" />
-            <img src="./images/m3.jpg" alt="" className="w-70 h-50 object-cover" />
-            <img src="./images/2.jpg" alt="" className="w-70 h-50 object-cover" />
-            <img src="./images/6.jpg" alt="" className="w-70 h-50 object-cover" />
-            <img src="./images/m1.jpg" alt="" className="w-70 h-50 object-cover" />
-            <img src="./images/m2.jpg" alt="" className="w-70 h-50 object-cover" />
-            <img src="./images/m3.jpg" alt="" className="w-70 h-50 object-cover" />
+            <img src="./images/2.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
+            <img src="./images/6.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
+            <img src="./images/m1.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
+            <img src="./images/m2.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
+            <img src="./images/m3.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
+            <img src="./images/2.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
+            <img src="./images/6.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
+            <img src="./images/m1.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
+            <img src="./images/m2.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
+            <img src="./images/m3.jpg" alt="" className="w-50 md:w-70 h-32 md:h-50 object-cover" />
           </div>
         ))}
       </div>

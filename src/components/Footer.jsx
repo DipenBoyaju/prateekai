@@ -4,12 +4,11 @@ import { Link } from "react-router-dom"
 const Footer = () => {
   return (
     <div className="bg-zinc-900">
-      <div className="container mx-auto px-10">
+      <div className="container mx-auto px-4 md:px-10">
         <div className="py-8 md:py-16 grid col-span-1  mg:gap-0 md:grid-cols-12 border-b border-zinc-800 space-y-5 md:space-y-0">
           <div className="col-span-1 md:col-span-5">
-            <img src="/images/logotext.png" alt="" className="w-60" />
-            {/* <p className="text-2xl font-semibold text-primary uppercase">prateek.ai</p> */}
-            <p className="text-base md:text-lg md:pr-16 pt-8 text-zinc-400">We are a dedicated team committed to breaking communication barriers through Nepali Sign Language Detection technology. Our mission is ...</p>
+            <img src="/images/logotext.png" alt="" className="w-32 md:w-60" />
+            <p className="text-base md:text-lg md:pr-16 pt-4 md:pt-8 text-zinc-400">We are a dedicated team committed to breaking communication barriers through Nepali Sign Language Detection technology. Our mission is ...</p>
             <Link to={'/aboutus'} className="text-base pt-3 font-light flex gap-1 items-center text-blue/50">read more <MoveRight /></Link>
           </div>
           <div className="col-span-3">
@@ -40,7 +39,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="py-8 text-zinc-400 font-light flex justify-between">
+        <div className="py-4 md:py-8 text-zinc-400 font-light text-sm md:text-base flex justify-center md:justify-between">
           <p>Copyright © 2025.All Rights Reserved.</p>
           <div className="">
             <h2 className=" uppercase text-2xl"></h2>

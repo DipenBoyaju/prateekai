@@ -70,11 +70,11 @@ const WebcamCapture = () => {
   };
 
   return (
-    <div className="grid grid-cols-12 gap-10">
-      <div className="col-span-8">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+      <div className="col-span-1 md:col-span-8">
         {isCameraOn ? (
           <div className="relative">
-            <div className="h-[80vh] bg-blue/30 rounded-lg border-2 border-blue/40">
+            <div className="h-[40vh] md:h-[80vh] bg-blue/30 rounded-lg border-2 border-blue/40">
               {/* Local webcam stream */}
               <video
                 ref={localVideoRef}
@@ -92,12 +92,12 @@ const WebcamCapture = () => {
             </button>
           </div>
         ) : (
-          <div className="w-full h-[80vh] flex items-center justify-center bg-blue/30 rounded-lg border-2 border-blue/40">
-            <div className="flex justify-center flex-col items-center bg-zinc-100 p-10 rounded-xl gap-4 border-2 border-blue/25">
+          <div className="w-full h-[40vh] md:h-[80vh] flex items-center justify-center bg-blue/30 rounded-lg border-2 border-blue/40">
+            <div className="flex justify-center flex-col items-center bg-zinc-100 md:p-10 p-4 rounded-xl gap-4 border-2 border-blue/25">
               <Camera size={52} className="text-amber-800 bg-amber p-3 rounded-full" />
               <button
                 onClick={toggleCamera}
-                className="bg-amber-500 hover:bg-amber-600 cursor-pointer text-white py-2 px-4 rounded-lg font-[500]"
+                className="bg-amber-500 hover:bg-amber-600 cursor-pointer text-white py-2 px-4 rounded-lg font-[500] text-sm md:text-base"
               >
                 Enable Camera
               </button>
@@ -106,8 +106,8 @@ const WebcamCapture = () => {
         )}
       </div>
 
-      <div className="col-span-4">
-        <div className="h-[80vh] bg-blue/5 rounded-md p-4 border-blue/10 border">
+      <div className="col-span-1 md:col-span-4">
+        <div className="h-[30vh] md:h-[80vh] bg-blue/5 rounded-md p-4 border-blue/10 border">
           {/* Display detected sign language text */}
           {signText && (
             <div className="flex justify-center items-center h-full">
