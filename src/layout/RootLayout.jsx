@@ -9,11 +9,7 @@ const RootLayout = () => {
     <>
       <Toaster />
       <ScrollToTop />
-      <div className="space-y-10">
-        {/* <Header name="mon" /> */}
-        <Header name="quick" />
-        {/* <Header name="orb" /> */}
-      </div>
+      <Header name="quick" />
       <Outlet />
       <Footer />
     </>
